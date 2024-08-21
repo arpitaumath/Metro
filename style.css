@@ -1,0 +1,322 @@
+*{
+   
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+
+    z-index: 2;
+    width: 100%;
+    height: 10vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.navbar h1{
+    color: yellow;
+    padding-inline: 20px;
+}
+.navbar button{
+
+    width: 250px;
+    height: 40px;
+    margin-inline: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+}
+.navbar i{
+    color:white;
+    font-size: 20px;
+    padding: 3px;
+}
+.cards{
+    width: 100%;
+    height: 250px;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.card{
+    width: 22%;
+    height: 150px;
+    background-color: rgb(196, 228, 241);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+.card i{
+    font-size: 50px;
+    font-weight: 200;
+}
+.card h3{
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+ .cards-2{
+    width: 100%;
+    height: auto;
+   background-color: rgb(237, 234, 234);
+  
+ }
+ .top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-inline: 40px;
+ }
+ .top h3{
+    font-size: 40px;
+    font-weight: 200;
+ }
+ .bottom{
+    width: 100%;
+    height: 200px;
+    display: flex;
+ }
+ .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .bottom h5{
+    font-size: 20px;
+    font-weight: 200;
+ }
+ .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .card-2{
+    width: 30%;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ .left .card-2{
+    background-color: white;
+ }
+ .right .card-2{
+    background-color: blue;
+    color: white;
+ }
+ .cards-3{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+    background-color: rgb(237, 230, 230);
+ }
+ .card-3{
+    width: 25%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+ }
+ .card-3 h3{
+    font-size: 25px;
+    font-weight:200 ;
+ }
+ .card-3 h4{
+    font-size: 15px;
+    font-weight: 200;
+ }
+ a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: blue;
+    background-color: rgb(237, 230, 230);
+ }
+ .cards-4{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .card-4{
+    width: 20%;
+    height: 250px;
+ }
+ .cards-4 h6{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    
+ }
+ .card-4 ul li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 30px;
+ }
+ .cards-4 p{
+    padding-block: 30px;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.032);
+ }
+ .cards-4 i{
+    color: skyblue;
+    font-size: 30px;
+    margin: 5px;
+ }
+ p{
+    font-size: 15px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(221, 209, 209);
+ }
+ h6{
+    font-weight: 400;
+    text-align: center;
+ }
+ .faq-sec{
+    background-color: darkblue;
+    color: white;
+    height: 60px;
+ }
+ .faq-sec ul {
+    display: flex;
+
+ }
+ .faq-sec ul li{
+    padding-inline: 10px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: underline;
+ }
+ .img-sec{
+    width: 100%;
+    height: auto;
+ }
+ .img-sec img{
+    width: 100%;
+    height: 100%;
+ }
+ .slides{
+    width: 100%;
+    padding-top: 10vh;
+    height: 400px;
+ }
+ .slides img{
+    width: 100%;
+    height: 400px;
+    position: center;
+ }
+
+
+ /* responsive 768 */
+
+ @media(max-width:768px){
+   .navbar button{
+    width:200px;
+    font-size: 15px;
+       }
+       .cards{
+       flex-direction: column;
+       width: 100%;
+       height: auto;
+       }
+       .card{
+       width: 80%;
+       margin-block: 20px;
+       }
+       .card h3{
+        font-size: 20px;
+       }
+       .cards-2{
+        width: 100%;
+        height: auto;
+       }
+       .cards-2 .top{
+       display: none;
+        
+       }
+       .cards-2 .bottom{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+       }
+       .cards-2 .left{
+        width: 100%;
+        height: auto;
+        margin-block: 20px;
+       }
+       .cards-2 .right{
+        width: 100%;
+        height: auto;
+        margin-block: 20px;
+       }
+       .cards-3{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+       }
+       .card-3{
+        width: 80%;
+       }
+       .cards-4{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+       }
+       .card-4{
+        width: 80%;
+        height: auto;
+        margin-block: 10px;
+       }
+       .card-4 ul li{
+        font-size: 13px;
+       }
+       p{
+        height: auto;
+       }
+ }
+
+
+ /* responsive 480 */
+ @media(max-width:480px){
+    .navbar button{
+        display: none;
+    }
+    .card-3 h3{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .faq-sec ul li{
+        font-size: 15px;
+    }
+ }
